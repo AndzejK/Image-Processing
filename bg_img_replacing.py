@@ -7,9 +7,9 @@ fg=cv2.imread('org_img/green-bg.jpg')
 fg[40,40] # printing a px based on this coordinates  - [27 150  54]
 width=fg.shape[1] # getting width
 height=fg.shape[0] # getting height
-r1 = np.arange(25, 39)
-r2 = np.arange(120, 204)
-r3 = np.arange(40, 78)
+r1 = np.arange(23, 42)
+r2 = np.arange(100, 210)
+r3 = np.arange(30, 80)
 #keep the same size as bg
 resized_bg=cv2.resize(bg,(width,height))
 
@@ -22,6 +22,3 @@ for i in range(width):
             fg[j,i]=resized_bg[j,i]
 
 cv2.imwrite('output_v7.jpg',fg)
-
-
-
